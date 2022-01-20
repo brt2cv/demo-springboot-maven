@@ -15,6 +15,9 @@
 	<description>Demo project for Spring Boot</description>
 	<properties>
 		<java.version>11</java.version>
+        <exec.mainClass>HelloTensorFlow</exec.mainClass>
+        <!-- <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target> -->
 	</properties>
 	<dependencies>
 		<dependency>
@@ -27,6 +30,11 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+        <dependency>
+            <groupId>org.tensorflow</groupId>
+            <artifactId>tensorflow-core-platform</artifactId>
+            <version>0.3.3</version>
+        </dependency>
 	</dependencies>
 
 	<build>
